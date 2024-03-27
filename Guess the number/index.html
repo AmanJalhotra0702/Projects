@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: grey;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .nav{
+            background-color: black;
+            height: 30px;
+            font-weight: 900;
+            display: flex;
+            justify-content: center;
+            font-size: larger;
+        }
+        .p{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+        }
+        .t{
+            margin-left: 535px;
+            height: 25px;
+            width: 200px;
+            border: 4px solid rgba(46, 57, 62, 0.39);
+            margin-top: 20px;
+            display: block;
+        }
+        .s{
+            background-color: black;
+            color: white;
+            height: 45px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-left: 538px ;
+        }
+        form{
+            text-align: center;
+        }
+        #Guess{
+            font-size: xx-large;
+        }
+        .navbar{
+            height: 100px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+
+        }
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+            height: 50px;
+            width: 100px;
+            border: 2px solid grey;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/4 projects of Chai aur code/index.html" target="_blank">Home Page</a>
+    </nav>
+<div class="wrapper">
+    <h1 class="p">Guess the number</h1>
+    <p class="p">Try and guess a random number between 1 and 100.</p>
+    <p class="p">You have 10 attempts to guess the right number.</p>
+    <br>
+    <form class="form">
+    <label for="guessField" id="Guess">Guess a number </label>
+    <input id="guessField" class="t" type="text">
+    <input id="subt" class="t s" type="submit" value="Submit Guess">
+    </form>
+    <div id="resultParas">
+    <p class="p">Previous Guessess:<span  id="guesses" ></span></p>
+    <p  class="p">Guess Remaining:<span id="lastResult">10</span></p>
+    <p id="lowOrHi" class="p"></p>
+    </div>
+
+</div>
+</body>
+<script src="script.js"></script>
+</html>

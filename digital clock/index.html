@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+<style>
+    body{
+        background-color: grey;
+        color: whitesmoke;
+        margin: 0px;
+        padding: 0px;
+    }
+    #banner{
+        font-size: 35px;
+    }
+    #clock{
+        height: 50px;
+        width: 300px;
+        background-color: orangered;
+        border-radius: 5px;
+        font-size: 50px;
+    }
+    .container{
+        height: 565px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 5px solid red;
+    }
+        .navbar{
+            height: 100px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+
+        }
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+            height: 50px;
+            width: 100px;
+            border: 2px solid grey;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+        }
+        #clock{
+            text-align: center;
+        }
+</style>
+<body>
+    <nav class="navbar">
+        <a href="/4 projects of Chai aur code/index.html" target="_blank">Home Page</a>
+    </nav>
+    <div class="container">
+        <div id="banner"><span>Your Local Time</span></div>
+        <div id="clock"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index Calculator</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        .container{
+            border: 5px solid black;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .b{
+            margin-left: 98px;
+            width: 170px;
+        }
+        .navbar{
+            height: 100px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+
+        }
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+            height: 50px;
+            width: 100px;
+            border: 2px solid grey;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/4 projects of Chai aur code/index.html" target="_blank">Home Page</a>
+    </nav>
+    <div class="container">
+        <h1>Body Mass Index Calculator</h1>
+        <form>
+       <p><label>Height in CM: </label><input type="text" id="height"></p>
+       <p><label>Weight in KG: </label><input type="text" id="weight"></p>
+       <button class="b">Calculate</button>
+       <div id="results"></div>
+       <div class="weight-guide">
+        <h3>BMI Weight Guide</h3>
+        <p>Underweight = Less than 18.6</p>
+        <p>Normal Range = 18.6 and 24.9</p>
+        <p>Overweight = Greater than 24.9</p>
+       </div>
+
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
